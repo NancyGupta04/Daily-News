@@ -1,4 +1,3 @@
-
 import NewsItem from './NewsItem.js'
 import React, { Component } from 'react'
 import Spinner from './Spinner.js';
@@ -9,7 +8,7 @@ import InfiniteScroll from "react-infinite-scroll-component";
 export default class News extends Component {
   static defaultProps = {
     country: 'in',
-    pageSize: 8,
+    pageSize: 20,
     category: 'general'
   }
   static propTypes = {
@@ -115,7 +114,6 @@ export default class News extends Component {
   //   this.setState({ page: this.state.page - 1 });
   //   this.updateNews();
   // }
-
   // handleNextClick = async () => {
   //   this.setState({ page: this.state.page + 1 });
   //   this.updateNews();
@@ -136,7 +134,7 @@ export default class News extends Component {
             <div className='container my-3'>
               <div className="row">
                 {this.state.articles.map((element) => {
-                  return <div key={element.url} className="col-md-3">
+                  return <div key={element.url} className="col-lg-3 col-md-4 col-sm-6">
                     <NewsItem title={element.title ? element.title : ""} descr={element.description ? element.description.slice(0, 88) : ""} imageUrl={element.urlToImage ? element.urlToImage : NewsImg} newsUrl={element.url} author={element.author ? element.author : 'Unknown'} publishDate={element.publishedAt} source={element.source.name} />
                   </div>
                 })}

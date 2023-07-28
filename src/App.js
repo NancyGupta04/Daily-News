@@ -7,7 +7,7 @@ import Layout from './components/Layout';
 
 
 export default class App extends Component {
-  pageSize=12
+  pageSize=20
   api_key=process.env.REACT_APP_NEWS_API
   state={
   progress:10

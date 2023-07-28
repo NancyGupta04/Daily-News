@@ -1,9 +1,0 @@
-<Routes></Routes><News pageSize={25} country='in' category='business/></Routes>
-<Routes><News pageSize={25} country='in' category='entertainment/></Routes>
-<Routes><News pageSize={25} country='in' category='general/></Routes>
-<Routes><News pageSize={25} country='in' category='health/></Routes>
-<Routes><News pageSize={25} country='in' category='science/></Routes>
-<Routes><News pageSize={25} country='in' category='sports/></Routes>
-<Routes><News pageSize={25} country='in' category='technology/></Routes>
-
-<News pageSize={25} country='in' category='sports'
